@@ -46,8 +46,8 @@ class User extends Authenticatable
  * Defining a model level relation from training sheet to user 
  * 
  */
-    public function trainingSheet()
+    public function trainingSheets()
     {
-        return $this->hasOne('App\TrainingSheet');
+        return $this->hasMany('App\TrainingSheet');
     }
 }

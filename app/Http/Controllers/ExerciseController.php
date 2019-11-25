@@ -44,21 +44,35 @@ class ExerciseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $validateExercise = $request->validate([
+            'name' => 'required',
+            'series' => 'required',
+            'reps' => 'required',
+            'weight' => 'required' 
+        ]);
+
+        /*foreach($validateExercise as $valid)
+        {
+            $exercicio = new Exercise();
+            $exercicio->create($valid);
+        }
+        return view('userPanel');
+        */
         $exercise = new Exercise();
 
         $exercise->name = request('name');
-        $exercise->category = request('category');
-        $exercise->description = request('description');
+        $exercise->sequence = request('sequence');
         $exercise->series = request('series');
         $exercise->reps = request('reps');
         $exercise->weight = request('weight');
 
         $exercise->save();
-
+        /*sim, eu sei que é cagada*/
          if($exercise->save() == true)
             echo "<script type='text/javascript'>alert('Exercicio cadastrado com sucesso!'); window.location.href = index.php;</script>";
-            return view('userpanel');
+        return view('userpanel');
+            
     }
 
     /**

@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <form action="{{route('insertsheet')}}" method="post">
                     @csrf
-                        
+
                         <div class="table-responsive">
                             <p class='text-md-center'>Cardio</p>
                         </div>
@@ -91,8 +91,8 @@
 <script>
 $( "#add" ).click(function() {
  
-var newElement = '<tr> <td> <input id="order[]" type="text" class="form-control text-md-center" name="sequence[]" value=""  placeholder = "A1"> </td>'
-    newElement += '<td> <input id="exercise[]" type="text" class="form-control text-md-center" name="exercise[]" value=""  placeholder = "Supino reto"> </td> '
+var newElement = '<tr> <td> <input id="sequence[]" type="text" class="form-control text-md-center" name="sequence[]" value=""  placeholder = "A1"> </td>'
+    newElement += '<td> <input id="name[]" type="text" class="form-control text-md-center" name="name[]" value=""  placeholder = "Supino reto"> </td> '
     newElement += '<td> <input id="series[]" type="text" class="form-control text-md-center" name="series[]" value=""  placeholder = "3"> </td>'
     newElement += '<td> <input id="reps[]" type="text" class="form-control text-md-center" name="reps[]" value=""  placeholder = "15"> </td>'
     newElement += '<td> <input id="weight[]" type="text" class="form-control text-md-center" name="weight[]" value=""  placeholder = "35"> </td> </tr>'

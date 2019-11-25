@@ -12,42 +12,35 @@
                         <div class="form-group row">
                             <label for="Name" class="col-md-4 col-form-label text-md-right">Nome do exercicio:</label>
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control " name="name" value="" required="">
+                                <input id="name" type="text" class="form-control " name="name" value="" required="" placeholder="supino reto">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="Categoria" class="col-md-4 col-form-label text-md-right">Categoria do exercicio:</label>
+                            <label for="sequence" class="col-md-4 col-form-label text-md-right">Ordem do exercicio:</label>
                             <div class="col-md-6">
-                                <input id="category" type="text" class="form-control " name="category" value="" required="">   
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="description" class="col-md-4 col-form-label text-md-right">Breve descrição do exercicio:</label>
-                            <div class="col-md-6">
-                                <input id="description" type="text" class="form-control" name="description" value="", required="">
+                                <input id="sequence" type="text" class="form-control " name="sequence" value="" required="" placeholder="A1">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="series" class="col-md-4 col-form-label text-md-right">Numero de séries:</label>
                             <div class="col-md-6">
-                                <input id="series" type="text" class="form-control" name="series" value="", required="">
+                                <input id="series" type="text" class="form-control" name="series" value="", required="" placeholder="3">
                             </div>
                         </div>
 
                         <div class="form-group row">-
                             <label for="reps" class="col-md-4 col-form-label text-md-right">Numero de repetições por série:</label>
                             <div class="col-md-6">
-                                <input id="reps" type="text" class="form-control" name="reps" value="", required="">
+                                <input id="reps" type="text" class="form-control" name="reps" value="", required="" placeholder="15">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label for="weight" class="col-md-4 col-form-label text-md-right">Peso recomendado para a pratica:</label>
                             <div class="col-md-6">
-                            <input id="weight" type="text" class="form-control" name="weight" value="", required="">
+                            <input id="weight" type="text" class="form-control" name="weight" value="", required="" placeholder="10">
                             </div>
                         </div>
 

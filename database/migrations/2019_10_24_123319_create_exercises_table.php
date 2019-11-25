@@ -15,13 +15,12 @@ class CreateExercisesTable extends Migration
     {
         Schema::create('exercises', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
             $table->string('name');
             $table->string('sequence')->nullable(); //detail
-            $table->string('description')->nullable();
-            $table->integer('reps');
             $table->integer('series');
+            $table->integer('reps');
             $table->integer('weight');
+            $table->timestamps();
         });
     }
 

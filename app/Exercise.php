@@ -17,14 +17,12 @@ class Exercise extends Model
      *
      * @var array
      */
-    protected $fillable = [
-        'name',
-        'sequence',
-        'description',
-        'series',
-        'reps',
-        'weight'
-    ];
+    protected $fillable = array('name',
+    'sequence',
+    'series',
+    'reps',
+    'weight');
+
 
     /**
      * Defines the relationship in a eloquent (model) level between exercise and training sheet.

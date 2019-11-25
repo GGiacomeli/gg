@@ -73,3 +73,10 @@ Route::get('/teste', 'ExerciseController@index');
 Route::get('/about', function(){
     return view('insertExercise');
 });
+
+
+Route::get('/teste', function(){
+    return view('teste');
+});
+
+Route::post('/teste', 'TrainingSheetController@store')->name('try');

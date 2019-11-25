@@ -19,7 +19,7 @@ class TrainingSheet extends Model
     */
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->HasMany('App\User');
     }
 
     /**
