@@ -61,22 +61,20 @@ Route::group(['middleware' => ['auth']], function(){
 
     Route::post('/createsheet', 'TrainingSheetController@store')->name('insertsheet');
 
-});
+    Route::get('/sheet', 'TrainingSheetController@mostrar')->name('sheet');
 
-//test route
-Route::get('/teste', 'ExerciseController@index');
+});
+//demo
 /**
- * 
- * end of exercises routing
+ * seeds the database with some exercises
  */
- //Route leading to a about page, showing information about the website.
-Route::get('/about', function(){
-    return view('insertExercise');
-});
+Route::get('/seed', 'ExerciseController@seed');
+
+/**
+ * seeds the database with one training sheet with user id 1 
+ */
+
+Route::get('/seeder', 'TrainingSheetController@seeder');
 
 
-Route::get('/teste', function(){
-    return view('teste');
-});
 
-Route::post('/teste', 'TrainingSheetController@store')->name('try');

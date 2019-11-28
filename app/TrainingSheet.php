@@ -17,9 +17,9 @@ class TrainingSheet extends Model
      * in a one to one to one training sheet.
      * 
     */
-    public function user()
+    public function users()
     {
-        return $this->HasMany('App\User');
+        return $this->belongsTo('App\User');
     }
 
     /**

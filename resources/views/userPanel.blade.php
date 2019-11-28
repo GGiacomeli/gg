@@ -11,7 +11,7 @@
     <a href="#" class="list-group-item list-group-item-action bg-light">Visualizar exercicios cadastrados</a>
     <a href="{{route('insertExercise')}}" class="list-group-item list-group-item-action bg-light">Cadastrar Exercicio</a>
     <a href="{{route('createsheet')}}" class="list-group-item list-group-item-action bg-light">Criar planilha de treino</a>
-    <a href="#" class="list-group-item list-group-item-action bg-light">Visualizar planilha de treino</a>
+    <a href="{{route('sheet')}}" class="list-group-item list-group-item-action bg-light">Visualizar planilha de treino</a>
     <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
   </div>
 </div>
@@ -44,8 +44,10 @@
   </nav>
 
   <div class="container-fluid">
-    <h1 class="mt-4">O Kringe é gay</h1>
-    <p>o gaylherme também</p>
+    <h1 class="mt-3 text-md-center">Bem vindo, {{{ Auth::user()->name}}}</h1>
+    <h3 class="mt-3 align-text-center">Seu id: {{{ Auth::user()->id}}}</h1>
+
+    <p>Novidades em breve!!!</p>
   </div>
 </div>
 
