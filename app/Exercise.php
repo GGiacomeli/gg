@@ -28,7 +28,7 @@ class Exercise extends Model
      * Defines the relationship in a eloquent (model) level between exercise and training sheet.
      * 
      */
-    public function trainingSheet()
+    public function trainingSheets()
     {
         return $this->belongsToMany('App\TrainingSheet');
     }

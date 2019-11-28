@@ -119,4 +119,135 @@ class ExerciseController extends Controller
     {
         //
     }
+
+    public function seed()
+    {
+        $exercise = new Exercise();
+        $exercise->name = 'Rosca concentrada';
+        $exercise->sequence = 'A1';
+        $exercise->series = 3;
+        $exercise->reps = 12;
+        $exercise->weight = 5;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Remada unilateral';
+        $exercise->sequence = 'A2';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 40;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Crucifixo';
+        $exercise->sequence = 'A3';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Supino reto';
+        $exercise->sequence = 'A4';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Pulley';
+        $exercise->sequence = 'A5';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Remada alta';
+        $exercise->sequence = 'A6';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Desenvolvimento com halteres';
+        $exercise->sequence = 'A7';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Agachamento Livre';
+        $exercise->sequence = 'B1';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Mesa extensora';
+        $exercise->sequence = 'B2';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Cadeira flexora';
+        $exercise->sequence = 'B3';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Leg press';
+        $exercise->sequence = 'B4';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Adutor';
+        $exercise->sequence = 'B5';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Abdutor';
+        $exercise->sequence = 'B6';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Gemeos sentado';
+        $exercise->sequence = 'B7';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Superior no declinado';
+        $exercise->sequence = 'C1';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+
+        $exercise = new Exercise();
+        $exercise->name = 'Prancha lateral';
+        $exercise->sequence = 'C2';
+        $exercise->series = 3;
+        $exercise->reps = 10;
+        $exercise->weight = 15;
+        $exercise->save();
+    }
 }
